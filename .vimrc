@@ -1,4 +1,5 @@
 set nocompatible
+set shell=bash
 
 filetype plugin on
 filetype indent on
@@ -21,7 +22,7 @@ set nowb
 set noswapfile
 set noundofile
 
-set noexpandtab
+set expandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=4
