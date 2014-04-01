@@ -35,3 +35,6 @@ set nowrap
 execute pathogen#infect()
 let g:vim_markdown_folding_disabled=1
 let mapleader = ","
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
