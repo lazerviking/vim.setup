@@ -65,5 +65,9 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
+" php docblock
+map <C-d> :call PhpDoc()
+
+" colors
 colorscheme molokai
 let macvim_skip_colorscheme=1
