@@ -47,7 +47,6 @@ let g:vim_markdown_folding_disabled=1
 " load bundles
 execute pathogen#infect()
 set t_Co=256
-colorscheme molokai
 set background=dark
 
 " ctrlp
@@ -63,3 +62,8 @@ let g:ycm_add_preview_to_completeopt = 0
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+set laststatus=2
+
+colorscheme molokai
+let macvim_skip_colorscheme=1
