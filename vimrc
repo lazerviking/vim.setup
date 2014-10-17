@@ -69,5 +69,5 @@ set laststatus=2
 map <C-d> :call PhpDoc()
 
 " colors
-colorscheme molokai
+colorscheme gotham
 let macvim_skip_colorscheme=1
