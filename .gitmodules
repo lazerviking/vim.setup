@@ -40,3 +40,6 @@
 [submodule "bundle/Muon"]
 	path = bundle/Muon
 	url = https://github.com/gregsexton/Muon.git
+[submodule "bundle/neocomplcache.vim"]
+	path = bundle/neocomplcache.vim
+	url = https://github.com/Shougo/neocomplcache.vim.git

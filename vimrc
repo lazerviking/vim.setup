@@ -56,9 +56,12 @@ let g:ctrlp_cmd = 'CtrlP'
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-" youcompleteme
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_add_preview_to_completeopt = 0
+" neocomplcache
+let g:acp_enableAtStartup = 0
+let g:neocomplcache_enable_at_startup = 1
+let g:neocomplcache_enable_smart_case = 1
+let g:neocomplcache_min_syntax_length = 3
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " airline
 let g:airline#extensions#tabline#enabled = 1
