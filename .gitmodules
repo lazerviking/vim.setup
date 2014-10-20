@@ -31,9 +31,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/YouCompleteMe"]
-	path = bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule "bundle/flattr.vim"]
 	path = bundle/flattr.vim
 	url = https://github.com/farseer90718/flattr.vim.git
