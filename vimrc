@@ -38,9 +38,12 @@ set nowrap
 
 " some controls
 let mapleader = ","
-nnoremap ü <C-]> " jump to tag with ü
 nmap <A-Left> :bp<CR>
 nmap <A-Right> :bn<CR>
+
+" tags
+nnoremap ü <C-]> " jump to tag with ü
+set tags=./tags,tags,./.git/tags
 
 let g:vim_markdown_folding_disabled=1
 
