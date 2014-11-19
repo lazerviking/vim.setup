@@ -74,6 +74,14 @@ set laststatus=2
 " php docblock
 map <C-d> :call PhpDoc()
 
+" vdebug
+let g:vdebug_options = {}
+let g:vdebug_options["port"] = 9000
+let g:vdebug_options["path_maps"] = {"/var/www/app": "/Users/nagyz/Code/replise"}
+let g:vdebug_options["server"] = "10.0.2.2"
+let g:vdebug_options["break_open"] = 1
+let g:vdebug_options["server"] = ""
+
 " colors
 colorscheme gotham
 let macvim_skip_colorscheme=1
