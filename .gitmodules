@@ -31,21 +31,18 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
-[submodule "bundle/flattr.vim"]
-	path = bundle/flattr.vim
-	url = https://github.com/farseer90718/flattr.vim.git
 [submodule "bundle/vim-gotham"]
 	path = bundle/vim-gotham
 	url = https://github.com/whatyouhide/vim-gotham.git
-[submodule "bundle/Muon"]
-	path = bundle/Muon
-	url = https://github.com/gregsexton/Muon.git
 [submodule "bundle/neocomplcache.vim"]
 	path = bundle/neocomplcache.vim
 	url = https://github.com/Shougo/neocomplcache.vim.git
-[submodule "bundle/vdebug"]
-	path = bundle/vdebug
-	url = https://github.com/joonty/vdebug.git
 [submodule "bundle/fsharp-vim"]
 	path = bundle/fsharp-vim
 	url = https://github.com/kongo2002/fsharp-vim.git
+[submodule "bundle/vim-javascript-syntax"]
+	path = bundle/vim-javascript-syntax
+	url = git@github.com:jelera/vim-javascript-syntax.git
+[submodule "bundle/Dockerfile.vim"]
+	path = bundle/Dockerfile.vim
+	url = https://github.com/ekalinin/Dockerfile.vim.git

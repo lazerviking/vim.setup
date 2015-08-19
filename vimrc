@@ -38,12 +38,13 @@ set nowrap
 
 " some controls
 let mapleader = ","
-nmap <A-Left> :bp<CR>
-nmap <A-Right> :bn<CR>
+nnoremap <C-l> :bnext<CR>
+nnoremap <C-h> :bprevious<CR>
+nnoremap <C-x> :bdelete<CR>
 
 " tags
 nnoremap ü <C-]> " jump to tag with ü
-set tags=./tags,tags,./.git/tags
+set tags=./.git/tags,.git/tags,./tags,tags
 
 let g:vim_markdown_folding_disabled=1
 
@@ -58,6 +59,8 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
+let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.py[co]$', '^__pycache__$', '\.DS_Store', '\.swp$']
 
 " neocomplcache
 let g:acp_enableAtStartup = 0
