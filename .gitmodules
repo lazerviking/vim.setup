@@ -13,9 +13,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
-[submodule "bundle/ctrlp.vim"]
-	path = bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
 [submodule "bundle/vim-salt"]
 	path = bundle/vim-salt
 	url = https://github.com/saltstack/salt-vim.git
@@ -46,3 +43,6 @@
 [submodule "bundle/Dockerfile.vim"]
 	path = bundle/Dockerfile.vim
 	url = https://github.com/ekalinin/Dockerfile.vim.git
+[submodule "bundle/papercolor"]
+	path = bundle/papercolor
+	url = https://github.com/NLKNguyen/papercolor-theme.git

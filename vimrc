@@ -41,6 +41,7 @@ let mapleader = ","
 nnoremap <C-l> :bnext<CR>
 nnoremap <C-h> :bprevious<CR>
 nnoremap <C-x> :bdelete<CR>
+noremap <Leader>s :update<CR>
 
 " tags
 nnoremap ü <C-]> " jump to tag with ü
@@ -74,9 +75,6 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set laststatus=2
 
-" php docblock
-map <C-d> :call PhpDoc()
-
 " vdebug
 let g:vdebug_options = {}
 let g:vdebug_options["port"] = 9000
@@ -86,5 +84,7 @@ let g:vdebug_options["break_open"] = 1
 let g:vdebug_options["server"] = ""
 
 " colors
-colorscheme gotham
+set background=light
+colorscheme PaperColor
+let g:airline_theme='PaperColor'
 let macvim_skip_colorscheme=1
