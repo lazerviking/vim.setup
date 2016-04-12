@@ -4,6 +4,7 @@ set shell=bash
 filetype plugin on
 filetype indent on
 syntax on
+au BufNewFile,BufRead *.tag set filetype=html " riot.js
 
 set autoread
 set ruler
@@ -51,8 +52,6 @@ let g:vim_markdown_folding_disabled=1
 
 " load bundles
 execute pathogen#infect()
-set t_Co=256
-set background=dark
 
 " ctrlp
 let g:ctrlp_map = '<c-p>'
@@ -61,6 +60,7 @@ let g:ctrlp_working_path_mode = 'a'
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.py[co]$', '^__pycache__$', '\.DS_Store', '\.swp$']
 
@@ -85,7 +85,9 @@ let g:vdebug_options["break_open"] = 1
 let g:vdebug_options["server"] = ""
 
 " colors
-set background=light
-colorscheme PaperColor
+set t_Co=256
+set background=dark
+let base16colorspace=256
+colorscheme base16-paraiso
 let g:airline_theme='PaperColor'
 let macvim_skip_colorscheme=1
