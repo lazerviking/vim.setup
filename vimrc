@@ -2,13 +2,14 @@ set nocompatible
 set shell=bash
 
 filetype plugin on
-filetype indent on
+" filetype indent on
 syntax on
-au BufNewFile,BufRead *.tag set filetype=html " riot.js
+au BufNewFile,BufRead *.tag set ft=javascript " riot.js
 
 set autoread
 set ruler
 set number
+set relativenumber
 set cursorline
 set smartcase
 set hlsearch
@@ -32,10 +33,12 @@ set tabstop=4
 set softtabstop=4
 set smarttab
 autocmd BufWritePre * :%s/\s\+$//e
+set colorcolumn=80
 
 set ai
 set si
 set nowrap
+set sidescroll=1
 
 " some controls
 let mapleader = ","
@@ -57,12 +60,17 @@ execute pathogen#infect()
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_max_files = 0
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|.git$\|.eggs\|.egg-info\|.cache\|__pycache__'
 
 " nerdtree
 map <C-n> :NERDTreeToggle<CR>
 map <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.py[co]$', '^__pycache__$', '\.DS_Store', '\.swp$']
+
+" nerdcommenter
+let g:NERDSpaceDelims = 1
 
 " neocomplcache
 let g:acp_enableAtStartup = 0
@@ -87,7 +95,8 @@ let g:vdebug_options["server"] = ""
 " colors
 set t_Co=256
 set background=dark
-let base16colorspace=256
-colorscheme base16-paraiso
-let g:airline_theme='PaperColor'
+colorscheme dracula
+let g:airline_theme='dracula'
 let macvim_skip_colorscheme=1
+
+set smartindent
