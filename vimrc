@@ -1,10 +1,8 @@
 set nocompatible
 set shell=bash
 
-filetype plugin on
-" filetype indent on
+filetype plugin indent on
 syntax on
-au BufNewFile,BufRead *.tag set ft=javascript " riot.js
 
 set autoread
 set ruler
@@ -29,9 +27,10 @@ set noundofile
 " tabs, whitespace & shit
 set expandtab
 set shiftwidth=4
-set tabstop=4
 set softtabstop=4
 set smarttab
+set smartindent
+
 autocmd BufWritePre * :%s/\s\+$//e
 set colorcolumn=80
 
@@ -98,5 +97,3 @@ set background=dark
 colorscheme dracula
 let g:airline_theme='dracula'
 let macvim_skip_colorscheme=1
-
-set smartindent
