@@ -90,4 +90,4 @@ colorscheme dracula
 let g:airline_theme='dracula'
 let macvim_skip_colorscheme=1
 
-au BufNewFile,BufRead *.tag setlocal ft=html
+au BufNewFile,BufRead *.tag setlocal ft=javascript
